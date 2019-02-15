@@ -1,6 +1,6 @@
 package main
 
-// Puppy defines the attributes corresponding to puppy
+// Puppy defines the attributes corresponding to puppy, holds the values of the puppy
 type Puppy struct {
 	id    uint
 	breed string
