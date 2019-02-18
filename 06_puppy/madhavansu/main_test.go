@@ -11,7 +11,7 @@ import (
 
 type storerImpl int
 
-var mapID, mapIDm uint
+var mapID uint
 
 const (
 	smem storerImpl = iota
@@ -19,14 +19,6 @@ const (
 )
 
 var (
-	puppyIN = func() Puppy {
-		return Puppy{
-			id:    107,
-			breed: "Slinky",
-			color: "purple",
-			value: "12999",
-		}
-	}
 	puppyOut1 = func() Puppy {
 		return Puppy{
 			id:    1,
@@ -41,22 +33,6 @@ var (
 			breed: "Slinky",
 			color: "purple",
 			value: "12999",
-		}
-	}
-	modifiedpuppyIN = func() Puppy {
-		return Puppy{
-			id:    107,
-			breed: "Labrador Retriever",
-			color: "brown",
-			value: "13999",
-		}
-	}
-	puppy108 = func() Puppy {
-		return Puppy{
-			id:    108,
-			breed: "Bulldog",
-			color: "red",
-			value: "842.50",
 		}
 	}
 	puppyEmpty = func() Puppy {
